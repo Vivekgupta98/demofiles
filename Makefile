@@ -1,5 +1,6 @@
-CFLAGS = -O
-CC = g++
+CFLAGS := -gdwarf-4
+CC := g++
+
 NumTest: main.o Num.o
 	$(CC) $(CFLAGS) -o NumTest main.o Num.o
 main.o: main.cpp
