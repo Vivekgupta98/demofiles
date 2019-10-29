@@ -1,1 +1,1 @@
-add_library(libmylib Num.h)
+add_library(libmylib Num.c)
