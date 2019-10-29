@@ -1,10 +1,11 @@
 cmake_minimum_required(VERSION 2.8)
 
-project(main C)
+project(demofiles)
 
-set(CMAKE_BUILD_TYPE Debug)
-set(CMAKE_C_FLAGS_DEBUG "-gdwarf-4")
-
+include_directories ("${PROJECT_SOURCE_DIR}/lib")
+add_subdirectory(lib)
 
 # add the executable
-add_executable (Num.c main.c)
+add_executable (mainexe src/main.c)
+target_link_libraries (mainexe libmylib)
+

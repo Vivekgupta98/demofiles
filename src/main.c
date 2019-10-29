@@ -2,6 +2,7 @@
 
 int xx=5;
 extern int temp;
+
 int main()
 {
 	temp=4;
