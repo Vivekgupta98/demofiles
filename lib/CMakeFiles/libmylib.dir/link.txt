@@ -1,0 +1,2 @@
+/usr/bin/ar qc liblibmylib.a  CMakeFiles/libmylib.dir/Num.c.o
+/usr/bin/ranlib liblibmylib.a

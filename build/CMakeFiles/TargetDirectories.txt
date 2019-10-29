@@ -1,0 +1,6 @@
+/workspace/projects/demofiles/build/CMakeFiles/edit_cache.dir
+/workspace/projects/demofiles/build/CMakeFiles/rebuild_cache.dir
+/workspace/projects/demofiles/build/CMakeFiles/mainexe.dir
+/workspace/projects/demofiles/build/lib/CMakeFiles/edit_cache.dir
+/workspace/projects/demofiles/build/lib/CMakeFiles/rebuild_cache.dir
+/workspace/projects/demofiles/build/lib/CMakeFiles/libmylib.dir

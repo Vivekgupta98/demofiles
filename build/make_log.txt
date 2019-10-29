@@ -1,0 +1,40 @@
+/usr/bin/cmake -H/workspace/projects/demofiles -B/workspace/projects/demofiles/build --check-build-system CMakeFiles/Makefile.cmake 0
+/usr/bin/cmake -E cmake_progress_start /workspace/projects/demofiles/build/CMakeFiles /workspace/projects/demofiles/build/CMakeFiles/progress.marks
+make -f CMakeFiles/Makefile2 all
+make[1]: Entering directory '/workspace/projects/demofiles/build'
+make -f lib/CMakeFiles/libmylib.dir/build.make lib/CMakeFiles/libmylib.dir/depend
+make[2]: Entering directory '/workspace/projects/demofiles/build'
+cd /workspace/projects/demofiles/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /workspace/projects/demofiles /workspace/projects/demofiles/lib /workspace/projects/demofiles/build /workspace/projects/demofiles/build/lib /workspace/projects/demofiles/build/lib/CMakeFiles/libmylib.dir/DependInfo.cmake --color=
+Dependee "/workspace/projects/demofiles/build/lib/CMakeFiles/libmylib.dir/DependInfo.cmake" is newer than depender "/workspace/projects/demofiles/build/lib/CMakeFiles/libmylib.dir/depend.internal".
+Dependee "/workspace/projects/demofiles/build/lib/CMakeFiles/CMakeDirectoryInformation.cmake" is newer than depender "/workspace/projects/demofiles/build/lib/CMakeFiles/libmylib.dir/depend.internal".
+Scanning dependencies of target libmylib
+make[2]: Leaving directory '/workspace/projects/demofiles/build'
+make -f lib/CMakeFiles/libmylib.dir/build.make lib/CMakeFiles/libmylib.dir/build
+make[2]: Entering directory '/workspace/projects/demofiles/build'
+[ 25%] Building C object lib/CMakeFiles/libmylib.dir/Num.c.o
+cd /workspace/projects/demofiles/build/lib && /usr/bin/cc   -I/workspace/projects/demofiles/lib  -g   -o CMakeFiles/libmylib.dir/Num.c.o   -c /workspace/projects/demofiles/lib/Num.c
+[ 50%] Linking C static library liblibmylib.a
+cd /workspace/projects/demofiles/build/lib && /usr/bin/cmake -P CMakeFiles/libmylib.dir/cmake_clean_target.cmake
+cd /workspace/projects/demofiles/build/lib && /usr/bin/cmake -E cmake_link_script CMakeFiles/libmylib.dir/link.txt --verbose=1
+/usr/bin/ar qc liblibmylib.a  CMakeFiles/libmylib.dir/Num.c.o
+/usr/bin/ranlib liblibmylib.a
+make[2]: Leaving directory '/workspace/projects/demofiles/build'
+[ 50%] Built target libmylib
+make -f CMakeFiles/mainexe.dir/build.make CMakeFiles/mainexe.dir/depend
+make[2]: Entering directory '/workspace/projects/demofiles/build'
+cd /workspace/projects/demofiles/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /workspace/projects/demofiles /workspace/projects/demofiles /workspace/projects/demofiles/build /workspace/projects/demofiles/build /workspace/projects/demofiles/build/CMakeFiles/mainexe.dir/DependInfo.cmake --color=
+Dependee "/workspace/projects/demofiles/build/CMakeFiles/mainexe.dir/DependInfo.cmake" is newer than depender "/workspace/projects/demofiles/build/CMakeFiles/mainexe.dir/depend.internal".
+Dependee "/workspace/projects/demofiles/build/CMakeFiles/CMakeDirectoryInformation.cmake" is newer than depender "/workspace/projects/demofiles/build/CMakeFiles/mainexe.dir/depend.internal".
+Scanning dependencies of target mainexe
+make[2]: Leaving directory '/workspace/projects/demofiles/build'
+make -f CMakeFiles/mainexe.dir/build.make CMakeFiles/mainexe.dir/build
+make[2]: Entering directory '/workspace/projects/demofiles/build'
+[ 75%] Building C object CMakeFiles/mainexe.dir/src/main.c.o
+/usr/bin/cc   -I/workspace/projects/demofiles/lib  -g   -o CMakeFiles/mainexe.dir/src/main.c.o   -c /workspace/projects/demofiles/src/main.c
+[100%] Linking C executable mainexe
+/usr/bin/cmake -E cmake_link_script CMakeFiles/mainexe.dir/link.txt --verbose=1
+/usr/bin/cc  -g   CMakeFiles/mainexe.dir/src/main.c.o  -o mainexe -rdynamic lib/liblibmylib.a 
+make[2]: Leaving directory '/workspace/projects/demofiles/build'
+[100%] Built target mainexe
+make[1]: Leaving directory '/workspace/projects/demofiles/build'
+/usr/bin/cmake -E cmake_progress_start /workspace/projects/demofiles/build/CMakeFiles 0

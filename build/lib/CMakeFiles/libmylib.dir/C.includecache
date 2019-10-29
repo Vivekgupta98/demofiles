@@ -1,0 +1,14 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/workspace/projects/demofiles/lib/Num.c
+Num.h
+/workspace/projects/demofiles/lib/Num.h
+
+/workspace/projects/demofiles/lib/Num.h
+
