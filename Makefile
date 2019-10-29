@@ -1,11 +1,11 @@
 CFLAGS := -gdwarf-4
-CC := g++
+CC := gcc
 
 NumTest: main.o Num.o
 	$(CC) $(CFLAGS) -o NumTest main.o Num.o
-main.o: main.cpp
-	$(CC) $(CFLAGS) -c main.cpp
-Num.o: Num.cpp
-	$(CC) $(CFLAGS) -c Num.cpp
+main.o: main.c
+	$(CC) $(CFLAGS) -c main.c
+Num.o: Num.c
+	$(CC) $(CFLAGS) -c Num.c
 clean:
 	rm -f core *.o 

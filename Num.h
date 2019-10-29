@@ -1,8 +1,2 @@
-class Num{
-private:
-	int num;
-public:
-	Num();
-	Num(int n);
-	int getNum();
-};
+int func(int x);
+int details(int y);
