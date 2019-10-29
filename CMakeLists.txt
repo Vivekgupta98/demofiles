@@ -7,4 +7,4 @@ set(CMAKE_C_FLAGS_DEBUG "-gdwarf-4")
 
 
 # add the executable
-add_executable (Num.cpp main.cpp)
+add_executable (Num.c main.c)
